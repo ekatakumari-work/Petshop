@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,3 +130,136 @@
   </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Website</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-circle">
+      <div class="circle outer-circle"></div>
+      <div class="circle inner-circle"></div>
+      <img src="images/logo.png" alt="Logo" class="logo-img">
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content animate-fade">
+      <h1>Adopt, Shop & Connect</h1>
+      <p>Join our community and explore the best way to care for your loved ones.</p>
+      <div class="cta-buttons">
+        <a href="adopt.html" class="btn">Start Adopting</a>
+        <a href="shop.html" class="btn-outline">Visit Shop</a>
+      </div>
+    </div>
+    <img src="images/hero-pets.png" alt="Pets" class="hero-img animate-slide">
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-grid">
+      <div class="card animate-up">
+        <img src="images/design.jpg" alt="Design">
+        <h3>Modern Design</h3>
+        <p>Clean, responsive, and user-friendly interface.</p>
+      </div>
+      <div class="card animate-up">
+        <img src="images/adopt.jpg" alt="Adopt">
+        <h3>Adopt & Care</h3>
+        <p>Find the right companion and give them a home.</p>
+      </div>
+      <div class="card animate-up">
+        <img src="images/shop.jpg" alt="Shop">
+        <h3>Quality Products</h3>
+        <p>Explore our shop with trusted and durable products.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial animate-fade">
+        <img src="images/user1.webp" alt="User">
+        <p>"This is the best platform for adoption and shopping. Highly recommended!"</p>
+        <span>- Sarah L.</span>
+      </div>
+      <div class="testimonial animate-fade">
+        <img src="images/user2.jpg" alt="User">
+        <p>"Beautiful design and smooth experience, I love it!"</p>
+        <span>- John D.</span>
+      </div>
+      <div class="testimonial animate-fade">
+        <img src="images/user3.jpg" alt="User">
+        <p>"Great products and an amazing adoption process!"</p>
+        <span>- Emily R.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 My Website</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="unsubscribe.html">Unsubscribe</a>
+      </div>
+<div class="socials">
+  <a href="https://www.mywebsite.com" target="_blank">🌐</a>
+  <a href="https://www.facebook.com/yourpage" target="_blank">📘</a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank">📸</a>
+  <a href="https://twitter.com/yourprofile" target="_blank">🐦</a>
+  <a href="https://www.linkedin.com/in/yourprofile" target="_blank">💼</a>
+</div>
+
+    </div>
+  </footer>
+
+  <!-- JS for Hamburger -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Animation on scroll
+    const elements = document.querySelectorAll('.animate-fade, .animate-slide, .animate-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+>>>>>>> 35a9a487e7c011bc7e1009c0f1b75797a2b358fe

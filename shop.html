@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,3 +126,132 @@
   </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - My Website</title>
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-circle">
+      <img src="images/logo.png" alt="Logo" class="logo-img">
+      <div class="circle outer-circle"></div>
+      <div class="circle inner-circle"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="shop-hero">
+    <h1 class="animate-fade">Welcome to Our Shop 🛍️</h1>
+    <p class="animate-slide">Find quality products and services for your furry friends.</p>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2 class="animate-up">Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card animate-up">
+        <img src="images/product1.jpg" alt="Dog Food">
+        <h3>Premium Dog Food</h3>
+        <p>Healthy and nutritious meals for your dog.</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card animate-up delay1">
+        <img src="images/product2.jpg" alt="Cat Toy">
+        <h3>Cat Play Toy</h3>
+        <p>Interactive toy for endless fun.</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card animate-up delay2">
+        <img src="images/product3.png" alt="Pet Bed">
+        <h3>Cozy Pet Bed</h3>
+        <p>Comfortable resting place for pets.</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card animate-up delay3">
+        <img src="images/product4.jpg" alt="Leash">
+        <h3>Durable Leash</h3>
+        <p>Strong and stylish leash for walks.</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2 class="animate-up">Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card animate-slide">
+        <span>✂️</span>
+        <h3>Pet Grooming</h3>
+        <p>Keep your pets clean and stylish with our grooming services.</p>
+      </div>
+      <div class="service-card animate-slide delay1">
+        <span>🏥</span>
+        <h3>Vet Consultation</h3>
+        <p>Get expert advice and health checkups for your pets.</p>
+      </div>
+      <div class="service-card animate-slide delay2">
+        <span>🎓</span>
+        <h3>Training</h3>
+        <p>Professional training programs for obedient and happy pets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-content animate-fade">
+      <img src="images/about.jpg" alt="About Us" class="about-img">
+      <div>
+        <h2>About Our Shop</h2>
+        <p>We are passionate about pets and their well-being. Our shop offers high-quality products and services to make your pet’s life healthier and happier. With years of experience, we are here to guide and support every pet owner.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a> | 
+      <a href="terms.html">Terms</a> | 
+      <a href="unsubscribe.html">Unsubscribe</a>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // Scroll animations
+    const animatedElements = document.querySelectorAll('.animate-fade, .animate-slide, .animate-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    animatedElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+>>>>>>> 35a9a487e7c011bc7e1009c0f1b75797a2b358fe

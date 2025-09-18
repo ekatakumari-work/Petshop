@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  min-height: 100vh;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.terms-hero {
+  text-align: center;
+  padding: 100px 20px 50px;
+}
+
+.terms-hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ff7e5f;
+}
+
+.terms-hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Terms Content */
+.terms-content {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.terms-box {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.terms-box h2 {
+  margin-top: 20px;
+  color: #ff7e5f;
+}
+
+.terms-box p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.terms-box a {
+  color: #ff7e5f;
+  text-decoration: none;
+}
+
+.terms-box a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.animate-fade { opacity: 0; transform: translateY(-20px); transition: all 1s ease-in-out; }
+.animate-slide { opacity: 0; transform: translateX(-30px); transition: all 1s ease-in-out; }
+.animate-up { opacity: 0; transform: translateY(30px); transition: all 1s ease-in-out; }
+.visible { opacity: 1; transform: translateY(0) translateX(0); }
+
+/* Responsive */
+@media(max-width:768px){
+  .terms-box { padding: 20px; }
+  .terms-hero h1 { font-size: 28px; }
+  .terms-hero p { font-size: 16px; }
+}
