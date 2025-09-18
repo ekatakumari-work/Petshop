@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1000;
+}
+
+.logo-circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #4cafef;
+  animation: spin 6s linear infinite;
+}
+
+.outer-circle { width: 60px; height: 60px; }
+.inner-circle { width: 50px; height: 50px; top: 5px; left: 5px; border-color: #ff6f61; animation: spinReverse 8s linear infinite; }
+
+@keyframes spin { from {transform: rotate(0deg);} to {transform: rotate(360deg);} }
+@keyframes spinReverse { from {transform: rotate(360deg);} to {transform: rotate(0deg);} }
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+  color: #ff6f61;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Unsubscribe Section */
+.unsubscribe-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.unsubscribe-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+.unsubscribe-box h1 { margin-bottom: 15px; color: #ff6f61; }
+.unsubscribe-box p { margin-bottom: 20px; color: #555; }
+
+.unsubscribe-box input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.unsubscribe-box input[type="email"]:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 8px rgba(255,111,97,0.4);
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(255, 126, 95, 0.5);
+}
+
+/* Footer */
+footer {
+  background: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.footer-links a {
+  color: #ff6f61;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover { text-decoration: underline; }
+
+.socials a { margin: 0 5px; font-size: 20px; }
+
+/* Responsive */
+@media(max-width:768px){
+  .nav ul { flex-direction: column; display: none; background: #fff; position: absolute; top: 70px; right: 20px; padding: 10px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);}
+  .nav.open ul { display: flex; }
+  .hamburger { display: block; }
+}
