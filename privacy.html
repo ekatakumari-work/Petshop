@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <link rel="stylesheet" href="css/privacy.css">
+
+
+</head>
+<body>
+ 
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-circle">
+      <img src="images/logo.png" alt="Logo" class="logo-img">
+      <div class="circle outer-circle"></div>
+      <div class="circle inner-circle"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">&#9776;</div>
+  </header>
+  <section class="accordion">
+  <div class="item">
+    <button>1. Information We Collect</button>
+    <div class="content">
+      <p>We collect personal data such as name, email, and preferences to provide better services.</p>
+    </div>
+  </div>
+  <div class="item">
+    <button>2. How We Use Data</button>
+    <div class="content">
+      <p>Your data is used to improve our services and offer personalized recommendations.</p>
+    </div>
+  </div>
+  <div class="item">
+    <button>3. Security</button>
+    <div class="content">
+      <p>We implement strong security measures to protect your personal information.</p>
+    </div>
+  </div>
+  <div class="item">
+    <button>4. Cookies & Tracking</button>
+    <div class="content">
+      <p>We use cookies and similar technologies to enhance user experience and collect analytics data.</p>
+    </div>
+  </div>
+  <div class="item">
+    <button>5. Sharing Data</button>
+    <div class="content">
+      <p>We do not sell personal information but may share data with trusted partners to provide services.</p>
+    </div>
+  </div>
+  <div class="item">
+    <button>6. Your Rights</button>
+    <div class="content">
+      <p>You can access, update, or request deletion of your personal information at any time.</p>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 My Website</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="unsubscribe.html">Unsubscribe</a>
+      </div>
+     <div class="socials">
+  <a href="https://www.mywebsite.com" target="_blank">🌐</a>
+  <a href="https://www.facebook.com/yourpage" target="_blank">📘</a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank">📸</a>
+  <a href="https://twitter.com/yourprofile" target="_blank">🐦</a>
+  <a href="https://www.linkedin.com/in/yourprofile" target="_blank">💼</a>
+</div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".item button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        let content = btn.nextElementSibling;
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+      });
+    });
+  </script>
+</body>
+</html>
